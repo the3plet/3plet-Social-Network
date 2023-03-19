@@ -1,5 +1,5 @@
 import "./navbar.scss";
-import React from "react";
+import React, { useContext } from "react";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import Brightness4RoundedIcon from "@mui/icons-material/Brightness4Rounded";
 import GridViewRoundedIcon from "@mui/icons-material/GridViewRounded";
@@ -7,8 +7,10 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import { Link } from "react-router-dom";
 import PersonOutlineRoundedIcon from "@mui/icons-material/PersonOutlineRounded";
 import NotificationsActiveRoundedIcon from "@mui/icons-material/NotificationsActiveRounded";
+import { AuthContext } from "../../context/authContext";
 
 const Navbar = () => {
+  const{currentUser}= useContext(AuthContext)
   return (
     <div className="navbar">
       <div className="left">
@@ -28,10 +30,10 @@ const Navbar = () => {
         <NotificationsActiveRoundedIcon />
         <div className="user">
           <img
-            src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg"
+            src={currentUser.profilePicture}
             alt=""
           />
-          <span>Peter Parker</span>
+          <span>{currentUser.name}</span>
         </div>
       </div>
     </div>
