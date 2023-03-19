@@ -1,9 +1,16 @@
+
+@import "../../style.scss";
 .leftBar {
   flex: 2;
   position: sticky;
   top: 70px;
   background-color: white;
   height: calc(100vh - 70px);
+
+  @include mobile{
+    display: none;
+  }
+  
   .container {
     padding: 20px;
     .menu {

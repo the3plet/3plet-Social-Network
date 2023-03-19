@@ -1,3 +1,4 @@
+@import "../../style.scss";
 .profile {
   background-color: whitesmoke;
   
@@ -27,6 +28,12 @@
   
   .profileContainer {
     padding: 20px 20px;
+    @include mobile{
+      padding: 10px;
+    }
+    @include tablet{
+      padding: 20px;
+  }
     
     .userInfo {
       height: 180px;
@@ -39,11 +46,20 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 20px;
+      @include mobile{
+        flex-direction: column;
+        height: 30vh;
+        padding: 20px;
+        margin-top: 100px;
+      }
       
       .left {
         flex: 1;
         display: flex;
         gap: 10px;
+        @include tablet{
+          flex-wrap: wrap;
+      }
         
         a {
           color: black;
@@ -67,6 +83,7 @@
           display: flex;
           align-items: center;
           justify-content: space-around;
+          padding: 10px;
           
           .item {
             display: flex;

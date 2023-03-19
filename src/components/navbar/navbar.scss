@@ -1,3 +1,4 @@
+@import "../../style.scss";
 .navbar {
 display: flex;
 align-items: center;
@@ -30,6 +31,12 @@ z-index: 1;
       input {
         border: none;
         width: 500px;
+       @include mobile{
+        display: none;
+       }
+       @include tablet{
+        width: 200px;
+       }
       }
     }
   }
@@ -37,11 +44,17 @@ z-index: 1;
     display: flex;
       align-items: center;
       gap: 20px;
+      @include mobile{
+        display: none;
+      }
     .user {
       display: flex;
       align-items: center;
       gap: 10px;
       font-weight: 500;
+      @include tablet{
+        display:none;
+       }
       img {
         width: 30px;
         height: 30px;
