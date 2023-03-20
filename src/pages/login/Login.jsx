@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link,useHistory } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 import "./login.scss";
 
@@ -7,8 +7,11 @@ import "./login.scss";
 const Login = () => {
   const{login} = useContext(AuthContext);
 
+  
+
 const handleLogin=()=>{
     login();
+    
 }
   return (
     <div className="login">
@@ -31,7 +34,10 @@ const handleLogin=()=>{
           <form>
             <input type="text" placeholder="Username" />
             <input type="password" placeholder="Password" />
+            <Link to='/'> 
             <button onClick={handleLogin}>Login</button>
+            </Link>
+            <p style={{border:"1px solid black", padding:'10px'}}>Just Press Login Button <br></br>currently no backend is conncected, thus preset login credential applies when pressing login button </p> 
           </form>
         </div>
       </div>

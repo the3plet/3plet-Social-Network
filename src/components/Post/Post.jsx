@@ -10,13 +10,21 @@ import Comments from "../comments/comments";
 
 const Post = ({ post }) => {
   const [commentOpen, setCommentOpen] = useState(false);
-  const liked = false;
+  const [liked, setLiked] = useState(false);
+
+  const handleLike = () => {
+    setLiked(!liked);
+  };
+
   return (
     <div className="post">
       <div className="container">
         <div className="user">
           <div className="userInfo">
-            <img src="" alt="" />
+            <img
+              src="https://images.pexels.com/photos/1323206/pexels-photo-1323206.jpeg?cs=srgb&dl=pexels-mixu-1323206.jpg&fm=jpg"
+              alt=""
+            />
             <div className="details">
               <Link
                 to={"/profile/${post.userId}"}
@@ -34,11 +42,14 @@ const Post = ({ post }) => {
           <img src={post.img} alt="" />
         </div>
         <div className="info">
-          <div className="item">
+          <div className="item" onClick={handleLike}>
             {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
             12 likes
           </div>
-          <div className="item" onClick={() => setCommentOpen(!commentOpen)}>
+          <div
+            className="item"
+            onClick={() => setCommentOpen(!commentOpen)}
+          >
             <TextsmsOutlinedIcon />
             12 comments
           </div>

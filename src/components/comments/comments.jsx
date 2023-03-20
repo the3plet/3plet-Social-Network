@@ -26,7 +26,8 @@ const Comments = () => {
   return (
     <div className="comments">
         <div className="write">
-            <img src={currentUser.profilePicture} alt="" />
+            <img src='https://images.pexels.com/photos/1323206/pexels-photo-1323206.jpeg?cs=srgb&dl=pexels-mixu-1323206.jpg&fm=jpg' alt="" />
+            {/* <img src={currentUser.profilePicture} alt="" /> */}
             <input type="text" placeholder="Write a comment"/>
             <button>Send</button>
         </div>

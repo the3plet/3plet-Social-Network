@@ -14,7 +14,7 @@ const RightBar = () => {
                 alt=""
               />
 
-              <span>John Bak</span>
+              <span>Lekshmi</span>
             </div>
             <div className="buttons">
               <button>Follow</button>
@@ -28,7 +28,7 @@ const RightBar = () => {
                 alt=""
               />
 
-              <span>John Bak</span>
+              <span>Priya</span>
             </div>
             <div className="buttons">
               <button>Follow</button>
@@ -45,7 +45,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online"/>
-              <span>John Bak</span>
+              <span>Nimitha</span>
             </div>
           </div>
           <div className="user">
@@ -55,7 +55,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online"/>
-              <span>John Bak</span>
+              <span>Roy</span>
             </div>
           </div>
           <div className="user">
@@ -65,7 +65,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online"/>
-              <span>John Bak</span>
+              <span>Shinjith</span>
             </div>
           </div>
           <div className="user">
@@ -75,7 +75,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online"/>
-              <span>John Bak</span>
+              <span>Vijay</span>
             </div>
           </div>
           <div className="user">
@@ -85,7 +85,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online"/>
-              <span>John Bak</span>
+              <span>Binoy</span>
             </div>
           </div>
           <div className="user">
@@ -95,7 +95,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online"/>
-              <span>John Bak</span>
+              <span>Aswin</span>
             </div>
           </div>
           <div className="user">
@@ -105,7 +105,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online"/>
-              <span>John Bak</span>
+              <span>Bijoy</span>
             </div>
           </div>
           <div className="user">
@@ -115,7 +115,7 @@ const RightBar = () => {
                 alt=""
               />
               <div className="online"/>
-              <span>John Bak</span>
+              <span>John</span>
             </div>
           </div>
           

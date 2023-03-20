@@ -8,7 +8,7 @@ export const AuthContextProvider = ({children}) =>{
     const login=()=>{
         setCurrentUser({
             id:1,
-            name: "hari",
+            name: "Diya Ram",
             profilePicture: ""
         });
     };

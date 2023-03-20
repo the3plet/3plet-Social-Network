@@ -46,7 +46,7 @@ const Profile = () => {
             </a>
           </div>
           <div className="center">
-            <span>Joye Ben</span>
+            <span>Diya Ram</span>
             <div className="info">
               <div className="item">
                 <PlaceIcon/>
@@ -54,7 +54,7 @@ const Profile = () => {
               </div>
               <div className="item">
                 <LanguageIcon/>
-                <span>3plet.com</span>
+                <span>Diya.com</span>
               </div>
               <button>Follow</button>
             </div>

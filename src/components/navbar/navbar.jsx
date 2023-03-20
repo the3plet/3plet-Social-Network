@@ -18,6 +18,8 @@ const Navbar = () => {
             <span>3pletsocial</span>
         </Link>
           <HomeRoundedIcon />
+
+      
           <Brightness4RoundedIcon />
           <GridViewRoundedIcon />
         <div className="search">
@@ -28,13 +30,16 @@ const Navbar = () => {
       <div className="right">
         <PersonOutlineRoundedIcon />
         <NotificationsActiveRoundedIcon />
+        <Link to='/profile/${post.userId}' style={{textDecoration:'none',color:'black'}}>
         <div className="user">
           <img
-            src={currentUser.profilePicture}
+            // src={currentUser.profilePicture}
+            src='https://images.pexels.com/photos/1323206/pexels-photo-1323206.jpeg?cs=srgb&dl=pexels-mixu-1323206.jpg&fm=jpg'
             alt=""
-          />
+            />
           <span>{currentUser.name}</span>
         </div>
+            </Link>
       </div>
     </div>
   );

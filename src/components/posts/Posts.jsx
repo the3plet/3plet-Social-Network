@@ -6,7 +6,7 @@ const Posts = () => {
   const posts=[
     {
       id:1,
-      name: "Hong hoe",
+      name: "Diya Ram",
       userId: 1,
       profilePicture:"https://img.freepik.com/free-photo/beautiful-woman-covering-eye-with-autumnal-leaves_329181-17150.jpg",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quasi. Ullam, nemo. Tenetur natus tempore amet labore! Atque assumenda quas expedita illum praesentium a sequi officiis! In labore ab odit.",
@@ -14,7 +14,7 @@ const Posts = () => {
     },
     {
       id:2,
-      name: "Hong hoe",
+      name: "Diya Ram",
       userId: 2,
       profilePicture:"https://img.freepik.com/free-photo/beautiful-woman-covering-eye-with-autumnal-leaves_329181-17150.jpg",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quasi. Ullam, nemo. Tenetur natus tempore amet labore! Atque assumenda quas expedita illum praesentium a sequi officiis! In labore ab odit.",
