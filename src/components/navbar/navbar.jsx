@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="right">
         <PersonOutlineRoundedIcon />
         <NotificationsActiveRoundedIcon />
-        <Link to='/profile/${post.userId}' style={{textDecoration:'none',color:'black'}}>
+        
         <div className="user">
           <img
             // src={currentUser.profilePicture}
@@ -39,7 +39,7 @@ const Navbar = () => {
             />
           <span>{currentUser.name}</span>
         </div>
-            </Link>
+         
       </div>
     </div>
   );

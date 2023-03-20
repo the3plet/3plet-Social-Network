@@ -27,7 +27,7 @@ const Post = ({ post }) => {
             />
             <div className="details">
               <Link
-                to={"/profile/${post.userId}"}
+                to={`/profile/${post.userId}`}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <span className="name">{post.name}</span>
